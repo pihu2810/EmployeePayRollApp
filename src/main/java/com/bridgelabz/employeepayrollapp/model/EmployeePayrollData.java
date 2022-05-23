@@ -1,7 +1,9 @@
 package com.bridgelabz.employeepayrollapp.model;
 
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
+import lombok.Data;
 
+@Data
 public class EmployeePayrollData
 {
     private int empId;
@@ -23,22 +25,6 @@ public class EmployeePayrollData
         this.name = employeePayrollDTO.name;
         this.salary = employeePayrollDTO.salary;
     }
-    public int getEmpId() {
-        return empId;
-    }
-    public void setEmpId(int employeeId) {
-        this.empId = employeeId;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public long getSalary() {
-        return salary;
-    }
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
+
+    
 }
