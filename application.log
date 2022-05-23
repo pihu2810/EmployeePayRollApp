@@ -1,0 +1,19 @@
+2022-05-23 21:03:30.245  INFO 15904 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 18.0.1.1 on Vishaka with PID 15904 (D:\SpringBoot\EmployeePayrollApp\target\classes started by ACER in D:\SpringBoot\EmployeePayrollApp)
+2022-05-23 21:03:30.250 DEBUG 15904 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-23 21:03:30.250  INFO 15904 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-05-23 21:03:32.444  WARN 15904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-23 21:03:32.757  INFO 15904 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.842 seconds (JVM running for 3.551)
+2022-05-23 21:03:32.757  INFO 15904 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App started
+2022-05-23 21:05:02.641  INFO 9412 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 18.0.1.1 on Vishaka with PID 9412 (D:\SpringBoot\EmployeePayrollApp\target\classes started by ACER in D:\SpringBoot\EmployeePayrollApp)
+2022-05-23 21:05:03.919 DEBUG 9412 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-23 21:05:03.919  INFO 9412 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-05-23 21:05:05.718  WARN 9412 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-23 21:05:06.022  INFO 9412 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.808 seconds (JVM running for 4.451)
+2022-05-23 21:05:06.022  INFO 9412 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App started
+2022-05-23 21:30:19.600  WARN 9412 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m43s735ms774µs200ns).
+2022-05-23 21:55:11.901  INFO 16104 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 18.0.1.1 on Vishaka with PID 16104 (D:\SpringBoot\EmployeePayrollApp\target\classes started by ACER in D:\SpringBoot\EmployeePayrollApp)
+2022-05-23 21:55:11.902 DEBUG 16104 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-23 21:55:11.903  INFO 16104 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2022-05-23 21:55:14.298  WARN 16104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-23 21:55:14.584  INFO 16104 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.145 seconds (JVM running for 3.833)
+2022-05-23 21:55:14.587  INFO 16104 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in DEV Environment
