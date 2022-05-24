@@ -1,5 +1,6 @@
 package com.bridgelabz.employeepayrollapp.dto;
 
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.ToString;
 
@@ -16,7 +17,7 @@ public @ToString class EmployeePayrollDTO {
     public long salary;
     @JsonFormat(pattern = "dd MMM yyyy")
     @NotNull(message = "Startdate should not be empty")
-    @PastOrPresent(message = "startDate shuld be past or todays date")
+    @PastOrPresent(message = "startDate should be past or todays date")
     public LocalDate startDate;
 
     @Pattern(regexp = "male|female", message = " Gender  needs to be male or female")

@@ -31,9 +31,9 @@ public class EmployeePayrollController
     }
 
     @GetMapping("/get/{empId}")
-    public ResponseEntity<ResponseDTO> getEmployeePayrollData(@PathVariable("empId") int employeeId){
+    public ResponseEntity<ResponseDTO> getEmployeePayrollData(@PathVariable("empId") int empId){
         EmployeePayrollData payrollData=null;
-        payrollData=employeePayrollService.getEmployeePayrollDataById(employeeId);
+        payrollData=employeePayrollService.getEmployeePayrollDataById(empId);
         ResponseDTO responseDTO = new ResponseDTO("Get Call Success for id:", payrollData);
         return new ResponseEntity<ResponseDTO>(responseDTO,HttpStatus.OK);
     }
@@ -48,19 +48,19 @@ public class EmployeePayrollController
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 
-    @PutMapping("/update/{employeeId}")
-    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable("employeeId") int employeeId,
+    @PutMapping("/update/{empId}")
+    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable("empId") int empId,
                                                                  @Valid @RequestBody EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData payrollData = null;
-        payrollData = employeePayrollService.updateEmployeePayrollData(employeeId, employeePayrollDTO);
+        payrollData = employeePayrollService.updateEmployeePayrollData(empId, employeePayrollDTO);
         ResponseDTO respDTO = new ResponseDTO("Updated Employee payroll Data for: ", payrollData);
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{employeeId}")
-    public ResponseEntity<ResponseDTO> deleteEmployeePayrollData(@PathVariable("employeeId") int employeeId) {
-        employeePayrollService.deleteEmployeePayrollData(employeeId);
-        ResponseDTO respDTO = new ResponseDTO("Delete Call Success for id: ", "employeeId " + employeeId);
+    @DeleteMapping("/delete/{empId}")
+    public ResponseEntity<ResponseDTO> deleteEmployeePayrollData(@PathVariable("empId") int empId) {
+        employeePayrollService.deleteEmployeePayrollData(empId);
+        ResponseDTO respDTO = new ResponseDTO("Delete Call Success for id: ", "empId " + empId);
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 }
