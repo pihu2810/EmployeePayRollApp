@@ -15,30 +15,31 @@ public @Data class EmployeePayrollData
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "emp_Id")
     private int empId;
-    @Column(name = "name")
+
     private String name;
-    @Column(name = "salary")
+
     private long salary;
-    @Column(name = "gender")
+
     private String gender;
-    @Column(name = "start_date")
+
     private LocalDate startDate;
-    @Column(name = "note")
+
     private String note;
-    @Column(name = "profile_pic")
+
     private String profilePic;
 
     @ElementCollection
     @CollectionTable(name = "employee_department",
-            joinColumns = @JoinColumn(name ="Id"))
+            joinColumns = @JoinColumn(name ="id"))
     @Column(name = "departments")
     private List<String> departments;
 
-    public EmployeePayrollData() {
 
-    }
     public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO){
         this.updateEmployeePayollData(employeePayrollDTO);
+    }
+    public EmployeePayrollData(){
+
     }
 
     public void updateEmployeePayollData( EmployeePayrollDTO employeePayrollDTO) {
